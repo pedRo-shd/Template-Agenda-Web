@@ -1,0 +1,9 @@
+"pt-BR":
+  messages:
+    confirmed: Deseja realmente apagar?
+    listing: Listando
+    new: Novo
+    errors: erros ocorreram...
+    created: Contato criado com sucesso
+    updated: Contato atualizado com sucesso
+    destroyed: Contato apagado com sucesso
