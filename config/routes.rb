@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
  
-  get 'home/bemvindo'=> 'home#index'
   root 'home#index' #neste caso sempre que abrir a url padrao, aparecera esta pagina home/index 
     
   resources :phones

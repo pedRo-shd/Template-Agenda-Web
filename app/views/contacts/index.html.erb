@@ -18,10 +18,10 @@
       <% @contacts.each do |contact| %>
         <tr style="background: <%= cycle('white', '#f0f0f5') %>" >
           <td><%= contact.name %></td>
-          <td><%= contact.kind.description %></td>
+          <td><%= contact.kind %></td>
           <td><%= link_to t('buttons.show'), contact %></td>
           <td><%= link_to t('buttons.edit'), edit_contact_path(contact) %></td>
-          <td><%= link_to t('buttons.destroy'), contact, method: :delete, data: { confirm: t('messages.confirmed') } %></td>
+          <td><%= link_to t('buttons.destroy'), contact, method: :delete, data:{ confirm: t('messages.confirmed') } %></td>
         </tr>
       <% end %>
     </tbody>

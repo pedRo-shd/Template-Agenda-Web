@@ -56,7 +56,7 @@ class KindsController < ApplicationController
   def destroy
     @kind.destroy
     respond_to do |format|
-      format.html { redirect_to kinds_url, notice: 'Kind was successfully destroyed.' }
+      format.html { redirect_to kinds_url, notice: t('messages.destroyed') }
       format.json { head :no_content }
     end
   end
